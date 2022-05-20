@@ -4,9 +4,7 @@ import time
 import datetime
 
 
-def main():
-    url = "https://www.google.com"
-    timeout = 5
+def startMonitor(timeout=5, url="https://www.google.com"):
     LINE_CLEAR = '\x1b[2K'  # <-- ANSI sequence
 
     toggle = True
@@ -27,4 +25,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    startMonitor()
